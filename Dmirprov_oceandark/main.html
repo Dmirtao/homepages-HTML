@@ -18,8 +18,8 @@
 	
     a{
             color:#65737e;
-            font-family:"Segoe UI";
-            font-size:25px;
+            font-family:"Consolas";
+            font-size:22px;
             text-decoration:none;
             margin-left:5px;
             transition-property: color;
@@ -38,7 +38,7 @@
      
     span{
             margin-left:10px;
-            text-family:"segoe UI";
+            text-family:"consolas";
             text-align: center;
     }
      
@@ -53,38 +53,38 @@
             transition-property: all;
             transition-duration: .5s;
             transition-timing-function: ease;
-            color: #65737e;
+            color: #2b303b;
 			background-position: -2px -1px;
 			background-image: url('http://i.imgur.com/ziSic3u.png');
 			background-repeat: no-repeat;
     }
      
     input[type=text]:hover {
-            border-color: #bebebe;
+            border-color: #2b303b;
             transition-property: all;
             transition-duration: .5s;
             transition-timing-function: ease;
-            color: #bebebe;
+            color: #2b303b;
 			width:230px;
 			background-position: 227px -1px;
 			padding-right: 20px;
     }
 	input[type=text]:focus {
-            border-color: #bebebe;
+            border-color: #2b303b;
             transition-property: all;
             transition-duration: .5s;
             transition-timing-function: ease;
-            color: #bebebe;
+            color: #2b303b;
 			width:230px;
 			background-position: 227px -1px;
 			padding-right: 20px;
 	}
      
     .boxed {
-            border: 1px solid #e6e6e6;
+            border: 1px solid #65737e;
             padding: 5px;
             color: #494949;
-            background-color: #ffffff;
+            background-color: #2b303b;
             width: 760px;
             margin-left: -390px;
             margin-right: auto;
@@ -100,7 +100,7 @@
 		  margin-top: -200px;
 		  margin-left: -380px;
 		  left: 50%;
-		  top: 22%;
+		  top: 25%;
 		  
     }
      
@@ -108,21 +108,13 @@
             <body>
             <h1 align="center" id="message" class="expandUp"></h1>
                 <script type="text/javascript">
-                        var d = new Date();
-                        var n = d.getHours();
- 
-                        if ( n == 23 || n == 0) {
-                                message = "<img src='goodnight.png'></img>";
-                        } else if ( n >= 1 && n <= 4 ) {
-                                message = "<img src='goodnight.png'></img>";
-                        } else if ( n >= 5 && n <= 11 ) {
-                                message = "<img src='goodmorning.png'></img>";
-                        } else if ( n >= 12 && n <= 17 ) {
-                                message = "<img src='goodafternoon.png'></img>";
-                        } else if ( n >= 18 && n <= 22 ) {
-                                message = "<img src='goodevening.png'></img>";
-                        }
- 
+                        var rand = Math.floor((Math.random() * 26) + 1);
+						var str1 = "<img src='prov";
+						var str2 = rand.toString();
+						var res = str1.concat(str2);
+						var str3 = ".png'></img>";
+						var res2 = res.concat(str3);
+						message = res2;
                         document.getElementById("message").innerHTML = message;
                 </script>
              <div class="boxed" class=slideUp>
@@ -167,7 +159,8 @@
             </br>
 			
 			<span> <img src="art.png"></span>
-			<a style="padding-left:10px" href="http://deviantart.com">deviantart</a>
+			<a style="padding-left:10px" href="http://deviantart.com">DA</a>
+			<a href="https://www.flickr.com/explore">flickr</a>
 			<a href="http://danbooru.donmai.us/">danbooru</a>
 			<a href="http://konachan.com/">konachan</a>
 			<a href="http://www.zerochan.net/">zerochan</a>
@@ -188,8 +181,9 @@
 			<span> <img src="rice.png"></span>
             <a style="padding-left:10px" href="http://nanami-tan.info/">nanamitan</a>
 			<a href="http://terminal.sexy/">terminal</a>
-			<a href="http://randomnessthing.com/">rndthng</a>
-			<a href="https://wiki.installgentoo.com/index.php/Main_Page">instlgentoo</a>
+			<a href="http://randomnessthing.com/">rndtg</a>
+			<a href="http://ref.ochazuke.org/">ref</a>
+			<a href="https://wiki.installgentoo.com/index.php/Main_Page">/g/wiki</a>
 			<a href="https://wiki.archlinux.org/">archwiki</a>
 			</br>
 			
@@ -230,10 +224,11 @@
 			</br>
 			
 			<span> <img src="weeb.png"></span>
-			<a style="padding-left:10px" href="http://www.crunchyroll.com/">crunchyroll</a>
+			<a style="padding-left:10px" href="http://xdcc.horriblesubs.info/">HSpack</a>
             <a href="http://www.animefreak.tv/">anifreak</a>
             <a href="http://myanimelist.net/">MAL</a>
             <a href="http://www.animenewsnetwork.com/">ANN</a>
+			<a href="http://www.nicovideo.jp/">niconico</a>
 			<a href="http://en.touhouwiki.net/wiki/Touhou_Danmakufu">touhou</a>
 			</br>
 			
@@ -242,9 +237,9 @@
 			<a href="http://tcgplayer.com">TCGplayer</a>
 			<a href="http://dmirtao.tumblr.com">tumblr</a>
 			<a href="https://osu.ppy.sh/">osu!</a>
+			<a href="http://puush.me/account">puush</a>
 			</br>
-			<form method="get" action="http://www.google.com/search"> <input type="text" placeholder="" value=""
-            name="q">
+			
            
             </div>
 			
